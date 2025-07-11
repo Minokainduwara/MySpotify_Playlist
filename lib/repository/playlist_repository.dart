@@ -5,7 +5,7 @@ import 'dart:convert';
 import '../models/track_model.dart';
 
 class PlaylistRepository {
-  final String baseUrl = 'http://localhost/MyAlbum/fetch_playlist.php';
+  final String baseUrl = 'http://192.168.1.10/MyAlbum/fetch_playlist.php';
 
   Future<List<Track>> fetchPlaylistTracks(String code) async {
     final uri = Uri.parse('$baseUrl?code=$code');
